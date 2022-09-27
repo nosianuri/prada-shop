@@ -85,6 +85,27 @@ var swiper = new Swiper(".product-slider", {
 
 
   var swiper = new Swiper('.categories-slider', {
+    slidesPerView: 4,
+    direction: getDirection(),
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    on: {
+      resize: function () {
+        swiper.changeDirection(getDirection());
+      },
+    },
+  });
+  function getDirection() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 768 ? 'vertical' : 'horizontal';
+
+    return direction;
+  }
+  
+
+  var swiper = new Swiper(".review-slider", {
     slidesPerView: 3,
     direction: getDirection(),
     navigation: {
@@ -99,8 +120,7 @@ var swiper = new Swiper(".product-slider", {
   });
   function getDirection() {
     var windowWidth = window.innerWidth;
-    var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+    var direction = window.innerWidth <= 768 ? 'vertical' : 'horizontal';
 
     return direction;
   }
-  
