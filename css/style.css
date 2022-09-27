@@ -34,6 +34,10 @@ body{
     background: #eee;
 }
 
+section{
+    padding: 2rem 9%;
+}
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -47,8 +51,8 @@ body{
 }
 
 .btn:hover{
-    background: var(--orange);
-    color: #fff;
+    text-decoration: underline;
+    background-color: var(--orange);
 }
 
 .header{
@@ -255,8 +259,66 @@ body{
     text-decoration: underline;
 }
 
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/home.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
 
+.home .content{
+    text-align:center;
+    width: 60rem;
+}
 
+.home .content h1{
+    color: var(--black);
+    font-size: 5rem;
+}
+
+.home .content h4{
+    font-size: 2rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.festival{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/festival.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 27rem;
+    padding-bottom: 27rem;
+}
+
+.offer{
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer h1{
+    font-size: 6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer p{
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer-btn{
+    color: #fff;
+    border-color: #fff;
+}
 
 
 
@@ -280,5 +342,50 @@ body{
 @media (max-width:991px){
     html{
         font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .search-form{
+        width: 90%;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
     }
 }
