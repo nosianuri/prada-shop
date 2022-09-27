@@ -41,6 +41,27 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 }
 
+var swiper = new Swiper(".box-container", {
+    loop: true,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+    },
+    centeredSlides: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1020: {
+        slidesPerView: 4,
+      },
+    },
+  });
+
 var swiper = new Swiper(".product-slider", {
     loop: true,
     spaceBetween: 20,
@@ -61,3 +82,25 @@ var swiper = new Swiper(".product-slider", {
       },
     },
   });
+
+
+  var swiper = new Swiper('.categories-slider', {
+    slidesPerView: 3,
+    direction: getDirection(),
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    on: {
+      resize: function () {
+        swiper.changeDirection(getDirection());
+      },
+    },
+  });
+  function getDirection() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+    return direction;
+  }
+  
