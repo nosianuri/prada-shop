@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prada Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
@@ -102,47 +103,79 @@
 
     <!-- Trending features section starts -->
 
-    <section class="trending-features" id="men">
+    <section class="trending-features" id="women">
         <h1 class="heading">Trending Now</h1>
         <div class="box-container">
             <div class="box">
                 <img src="images/hoody.png" alt="trending1">
                 <h3>Women Denim Jacket</h3>
-                <p>Brand Name  <span>  4.4⭐</span></p>
-                <h4>Rs.700 <small>Rs.1000 <span> (30% off)</span></small></h4>
+                <p>Brand Name  <span class="stars">  4.4<i class="fas fa-star"></i></span></p>
+                <h4 class="price">Rs.700 <small>Rs.1000 <span> (30% off)</span></small></h4>
             </div>
 
             <div class="box">
                 <img src="images/shirt.png" alt="trending1">
                 <h3>Women Denim Jacket</h3>
-                <p>Brand Name  <span>  4.4⭐</span></p>
-                <h4>Rs.700 <small>Rs.1000 <span> (30% off)</span></small></h4>
+                <p>Brand Name  <span class="stars">  4.4<i class="fas fa-star"></i></span></p>
+                <h4 class="price">Rs.700 <small>Rs.1000 <span> (30% off)</span></small></h4>
             </div>
 
             <div class="box">
                 <img src="images/jacket.png" alt="trending1">
                 <h3>Women Denim Jacket</h3>
-                <p>Brand Name  <span>  4.4⭐</span></p>
-                <h4>Rs.700 <small>Rs.1000 <span> (30% off)</span></small></h4>
+                <p>Brand Name  <span class="stars">  4.4<i class="fas fa-star"></i></span></p>
+                <h4 class="price">Rs.700 <small>Rs.1000 <span> (30% off)</span></small></h4>
             </div>
             <div class="box">
                 <img src="images/gown.png" alt="trending1">
                 <h3>Women Denim Jacket</h3>
-                <p>Brand Name  <span>  4.4⭐</span></p>
-                <h4>Rs.700 <small>Rs.1000 <span> (30% off)</span></small></h4>
+                <p>Brand Name  <span class="stars">  4.4<i class="fas fa-star"></i></span></p>
+                <h4 class="price">Rs.700 <small>Rs.1000 <span> (30% off)</span></small></h4>
             </div>
-            <div class="box">
+            <!-- <div class="box">
                 <img src="images/cloth.png" alt="trending1">
                 <h3>Women Denim Jacket</h3>
-                <p>Brand Name  <span>  4.4⭐</span></p>
-                <h4>Rs.700 <small>Rs.1000 <span> (30% off)</span></small></h4>
-            </div>
+                <p>Brand Name  <span class="stars">  4.4<i class="fas fa-star"></i></span></p>
+                <h4 class="price">Rs.700 <small>Rs.1000 <span> (30% off)</span></small></h4>
+            </div> -->
         </div>
     </section>
 
     <!-- Trending features section ends -->
 
     <!-- Deals features section starts -->
+
+    <section class="products" id="men">
+        <h1 class="heading"> Deals of the Day</h1>
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img class="image" src="images/deals1.png" alt="">
+                    <h1><img width="50px" src="images/brand.png" alt=""></h1>
+                    <h2>Best of styles</h2>
+                    <p class="price">Under Rs.799</p>
+                </div>
+                <div class="swiper-slide box">
+                    <img class="image" src="images/deals2.png" alt="">
+                    <h1><img width="50px" src="images/brand.png" alt=""></h1>
+                    <h2>Best of styles</h2>
+                    <p class="price">Under Rs.799</p>
+                </div>
+                <div class="swiper-slide box">
+                    <img class="image" src="images/deals3.png" alt="">
+                    <h1><img width="50px" src="images/brand.png" alt=""></h1>
+                    <h2>Best of styles</h2>
+                    <p class="price">Under Rs.799</p>
+                </div>
+                <div class="swiper-slide box">
+                    <img class="image" src="images/deals1.png" alt="">
+                    <h1><img width="50px" src="images/brand.png" alt=""></h1>
+                    <h2>Best of styles</h2>
+                    <p class="price">Under Rs.799</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Deals features section ends -->
 
     <!-- festival section starts -->
@@ -201,7 +234,7 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- custom js file link -->
     <script src="js/script.js"></script>
