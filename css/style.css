@@ -276,11 +276,15 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../images/home.png) no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 17rem;
-    padding-bottom: 10rem;
+    /* background: url(../images/home.png) no-repeat; */
+    /* background-position: center;
+    background-size: cover; */
+    padding-top: 8rem;
+    padding-bottom: 0rem;
+}
+
+.home .content-invite{
+    color: #002482;
 }
 
 .home .content {
@@ -290,7 +294,7 @@ section {
 
 .home .content h1 {
     color: var(--black);
-    font-size: 5rem;
+    font-size: 1.5rem;
 }
 
 .home .content h4 {
