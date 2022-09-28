@@ -84,7 +84,7 @@ var swiper = new Swiper(".product-slider", {
   });
 
 
-  var swiper = new Swiper('.categories-slider', {
+  var swiper = new Swiper('.offers-slider', {
     slidesPerView: 4,
     direction: getDirection(),
     navigation: {
