@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,400;1,500;1,700&display=swap');
 
 :root {
     --orange: #002482;
@@ -42,11 +42,6 @@ section {
 
 .heading {
     font-size: 2rem;
-    /* text-align: center;
-    padding: 2rem 0;
-    padding-bottom: 3rem;
-    font-size: 3.5rem;
-    color: var(--black); */
 }
 
 .btn {
@@ -82,23 +77,13 @@ section {
     box-shadow: var(--box-shadow);
 }
 
-/* .hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    padding-top: 27rem;
-    padding-bottom: 27rem;
-    margin-top: 3rem;
-    width: 100%;
-    
-} */
-
 .hero img{
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
-.banner-hero img{
+.banner-hero img {
     width: 100%;
 }
 
@@ -106,40 +91,58 @@ section {
     display: flex;
 }
 
-.banner .swiper {
-    width: 100%;
-    height: 100%;
-  }
 
-.banner .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-  .banner .swiper-slide img {
+.banner .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
-.hero .hero-content h1 {
-   
+.hero-tag{
+    position: absolute;
+    
+    text-transform: capitalize;
+    left: 62.86%;
+    right: 9.38%;
+    top: 26.6%;
+    bottom: 62.99%;
+    line-height: 2.8rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.hero-tag h2{
+    font-size: 83px;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    line-height: 2rem;
+    color: #272727;
+}
+
+.hero-tag p{
+    font-size: 40px;
+    line-height: 2rem;
+    margin-bottom: 5rem;
+    color: #605c5c;
+}
+
+.hero-tag span{
+    font-size: 40px;
+    margin-bottom: 5rem;
+    line-height: 2rem;
+    color: #605c5c;
+}
+
+.hero-tag button{
+    margin-bottom: 5rem;
+    line-height: 2rem;
+    color: #605c5c;
+    border: 2px solid #605c5c;
+}
+
+.header .logo{
+    margin-left: 2rem;
 }
 
 .header .logo img {
@@ -702,6 +705,7 @@ section {
     height: 17rem;
 }
 
+
 .categories-title {
     font-size: 25px;
     font-weight: 500;
@@ -710,58 +714,126 @@ section {
     text-transform: capitalize;
 }
 
-.categories .categories-content {
-    padding: 0 2rem;
-    display: flex;
-    gap: 2rem;
-}
-
-.categories .categories-content .categories-box {
-    flex: 1 1;
+.categories-item {
+    max-width: 800px;
+    padding: 1rem;
+    /* margin: 0 auto; */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    grid-auto-rows: 1fr;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 1rem;
 }
 
-.categories .categories-content .categories-box img {
+.categories-item img {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 
-.categories .categories-content .categories-box>:nth-child(1) {
-    width: 32rem;
-    grid-row: 1/3;
-    height: 48rem;
+.categories-item .item-a {
+    grid-row: 1 / 3;
 }
 
-.categories .categories-content .categories-box>:nth-child(2) {
-    width: auto;
-    height: 16rem;
-    grid-column: 2/3;
+.categories-item .item-b {
+    grid-column: 3 / 5;
 }
 
-.categories .categories-content .categories-box>:nth-child(3) {
-    width: auto;
-    height: 16rem;
-    grid-column: 3/4;
+.categories-item .item-c {
+    grid-row: 2 / 4;
+}
+
+
+/* quick grid */
+.container {
+    width: 93%;
     
 }
 
-.categories .categories-content .categories-box>:nth-child(4) {
-    width: 10rem;
-    grid-row: 2;
-    grid-column: 2/4;
-    height: 11.2rem;
+
+
+
+
+/* Bootstrap-style v3 columns */
+.column {
+    position: relative;
+    float: left;
+    min-height: 1px;
+    width: 25%;
+    padding-left: 4px;
+    padding-right: 4px;
+
+    /* Space between tiles */
+    margin-top: 8px;
 }
 
-.categories .categories-content .categories-box>:nth-child(4) {
-    width: 10rem;
-    grid-row: 2;
-    grid-column: 4/4;
-    height: 11.2rem;
+.col-span {
+    width: 50%;
 }
 
-.review .heading{
+.my-sizer-element {
+    width: 8.33333%;
+}
+
+/* default styles so shuffle doesn't have to set them (it will if they're missing) */
+.my-shuffle {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ensure images take up the same space when they load */
+/* https://vestride.github.io/Shuffle/images */
+.aspect {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+
+.aspect__inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.aspect--16x9 {
+    padding-bottom: 56.25%;
+}
+
+.aspect--9x80 {
+    padding-bottom: calc(112.5% + 8px);
+}
+
+.aspect--32x9 {
+    padding-bottom: calc(28.125% - 3px);
+}
+
+.categories img {
+    display: block;
+    width: 100%;
+
+    max-width: none;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Small reset */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+.review .heading {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
@@ -806,7 +878,7 @@ section {
     font-size: 1.7rem;
 }
 
-.swiper-button-next{
+.swiper-button-next {
     color: #272727;
 }
 
@@ -818,17 +890,17 @@ section {
     background: #00071B;
 }
 
-.credit a{
+.credit a {
     color: #fff;
     margin-right: 2rem;
 }
 
 
-.footer .box-container .box{
+.footer .box-container .box {
     margin-left: 3rem;
 }
 
-.footer .box-container .box h2{
+.footer .box-container .box h2 {
     font-size: 3.5rem;
     color: #fff;
     padding: 1rem 0;
@@ -894,15 +966,15 @@ section {
     text-transform: none;
 }
 
-.footer .box-container .box .email i{
+.footer .box-container .box .email i {
     margin-right: 3rem;
 }
 
-.footer h3 img{
-   background-image: #ffffff;
+.footer img {
+    margin-right: 2rem;
 }
 
-.footer-body{
+.footer-body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
@@ -916,11 +988,11 @@ section {
     border-top: var(--border);
 }
 
-hr{
+hr {
     border: 1px solid #FFFFFF;
 }
 
-.footer .credit span{
+.footer .credit span {
     margin-right: 5rem;
 }
 
