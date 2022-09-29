@@ -473,6 +473,10 @@ section {
     margin-left: 1rem;
 }
 
+.trending-features .heading{
+    font-size: 2.5rem;
+}
+
 .trending-features .box-container .box img {
     margin: 1rem 0;
     height: 15rem;
@@ -486,6 +490,10 @@ section {
 
 .trending-features .box-container .box p span {
     color: var(--light-color);
+}
+
+.products .heading{
+    font-size: 2.5rem;
 }
 
 .products .product-slider {
@@ -751,9 +759,6 @@ section {
 }
 
 
-
-
-
 /* Bootstrap-style v3 columns */
 .column {
     position: relative;
@@ -834,7 +839,7 @@ figure {
 
 
 .review .heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
@@ -858,6 +863,7 @@ figure {
     height: 10rem;
     width: 10rem;
     border-radius: 50%;
+    margin-bottom: 1.5rem;
 }
 
 .review .review-slider .box p {
@@ -873,9 +879,17 @@ figure {
     font-size: 2.2rem;
 }
 
-.review .review-slider .box .stars i {
+.review .review-slider .box .stars i{
     color: #c4c4c4;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+}
+
+.review .review-slider .box .stars{
+    margin-bottom: 1rem;
+}
+
+.starts span{
+    margin-left: 3rem;
 }
 
 .swiper-button-next {
