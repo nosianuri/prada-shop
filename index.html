@@ -27,19 +27,29 @@
             <a href="#shop">Shop</a>
             <a href="#contact">Contact Us</a>
         </nav>
+        <div class="nav-box">
+            <form class="nav-items">
+                <div class="search">
+                    <input type="text" class="search-box" placeholder="search here...">
+                    <!-- <button class="fas fa-search search-icon"></button> -->
+                    <button for="search-box" class="fas fa-search"></button>
+                </div>
+            </form>
 
+            <div class="icons">
+                <div class="fas fa-bars" id="menu-btn"></div>
 
-
-        <div class="icons">
-            <div class="fas fa-bars" id="menu-btn"></div>
-
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-love" id="love-btn"><img src="images/love.png" alt=""></div>
-            <div class="fas fa-shopping-cart" id="cart-btn">
-                <!-- <img src="images/cart.png" alt=""> -->
+                <!-- <div class="fas fa-search" id="search-btn"></div> -->
+                <div class="fas fa-love" id="love-btn"><img src="images/love.png" alt=""></div>
+                <div class="fas fa-cart" id="cart-btn"><img src="images/cart.png" alt=""></div>
+                <img class="fas" src="images/Ellipse 1.png" alt="">
+                <!-- <div class="fas fa-shopping-cart" id="cart-btn"> -->
             </div>
-            <div class="fas fa-user" id="login-btn"></div>
+            <!-- <div class="fas fa-user" id="login-btn"></div> -->
+            <p class="nav-content"> Anne Doe</p>
         </div>
+        </div>
+
 
         <form action="" class="search-form">
             <input type="search" id="search-box" placeholder="search here...">
@@ -96,6 +106,7 @@
         <div class="content">
             <h1>Invite Friends and get 50% off on your next purchase <a href="#" class="content-invite"> Invite Now</a>
             </h1>
+            <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
             <!-- <h1>Prada</h1>
             <h4>Big Fashion Festival 50% - 80% off</h4>
             <a href="#" class="btn">Explore</a> -->
@@ -106,6 +117,31 @@
     <!-- Banner Section Starts -->
 
     <section class="banner">
+        <div class=" banner-container">
+            <div class="">
+                <div class="banner-box ">
+                    <div class="banner-hero ">
+                        <img src="images/home.png" alt="">
+                    </div>
+                    <div class="hero">
+                        <!-- <div class="hero-content">
+                        <h2>PRADA</h2>
+                        <p>Big Fashion Festival </p>
+                        <span>50% - 80% off</span>
+                        <div>
+                            <button href="#" class="btn offers-btn">Explore</button>
+                        </div>
+                    </div> -->
+                        <img src="images/hero.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- <section class="banner">
         <div class="swiper banner-Swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -138,7 +174,7 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
-    </section>
+    </section> -->
     <!-- Banner Section ends -->
 
     <!-- Trending features section starts -->
@@ -147,37 +183,76 @@
         <h1 class="heading">Trending Now</h1>
         <div class="swiper box-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide box">
-                    <img src="images/hoody.png" alt="trending1">
-                    <h3>Women Denim Jacket</h3>
-                    <p>Brand Name <span class="stars"> 4.4<i class="fas fa-star"></i></span></p>
-                    <h4 class="price">Rs.700 <small>Rs.1000 <span> (30% off)</span></small></h4>
-                </div>
+                <div class="swiper-slide product-offers-card">
+                    <div class="product-offers-image tf-women">
+                        <img src="images/hoody.png" class="product-thumb" alt="">
+                        <div class="product-info tf-info">
+                            <h2 class="product-brand">Women Denim Jacket</h2>
+                            <p class="product-short-des">Brand Name 4.4<i class="fas fa-star"></i></p>
+                            <span class="price">Rs.700 </span><span class="actual-price">Rs.1000</span> (30% off)
+                        </div>
+                    </div>
 
-                <div class="swiper-slide box">
-                    <img src="images/shirt.png" alt="trending1">
-                    <h3>Women Denim Jacket</h3>
-                    <p>Brand Name <span class="stars"> 4.4<i class="fas fa-star"></i></span></p>
-                    <h4 class="price">Rs.700 <small>Rs.1000 <span> (30% off)</span></small></h4>
                 </div>
+                <div class="swiper-slide product-offers-card">
+                    <div class="product-offers-image tf-women">
 
-                <div class="swiper-slide box">
-                    <img src="images/jacket.png" alt="trending1">
-                    <h3>Women Denim Jacket</h3>
-                    <p>Brand Name <span class="stars"> 4.4<i class="fas fa-star"></i></span></p>
-                    <h4 class="price">Rs.700 <small>Rs.1000 <span> (30% off)</span></small></h4>
+                        <img src="images/shirt.png" class="product-thumb" alt="">
+                        <div class="product-info tf-info">
+                            <h2 class="product-brand">Women Denim Jacket</h2>
+                            <p class="product-short-des">Brand Name 4.4<i class="fas fa-star"></i></p>
+                            <span class="price">Rs.700 </span><span class="actual-price">Rs.1000</span> (30% off)
+                        </div>
+                    </div>
+
                 </div>
-                <div class="swiper-slide box">
-                    <img src="images/gown.png" alt="trending1">
-                    <h3>Women Denim Jacket</h3>
-                    <p>Brand Name <span class="stars"> 4.4<i class="fas fa-star"></i></span></p>
-                    <h4 class="price">Rs.700 <small>Rs.1000 <span> (30% off)</span></small></h4>
+                <div class="swiper-slide product-offers-card">
+                    <div class="product-offers-image tf-women">
+
+                        <img src="images/jacket.png" class="product-thumb" alt="">
+                        <div class="product-info tf-info">
+                            <h2 class="product-brand">Women Denim Jacket</h2>
+                            <p class="product-short-des">Brand Name 4.4<i class="fas fa-star"></i></p>
+                            <span class="price">Rs.700 </span><span class="actual-price">Rs.1000</span> (30% off)
+                        </div>
+                    </div>
+
                 </div>
-                <div class="swiper-slide box">
-                    <img src="images/deals2.png" alt="trending1">
-                    <h3>Women Denim Jacket</h3>
-                    <p>Brand Name <span class="stars"> 4.4<i class="fas fa-star"></i></span></p>
-                    <h4 class="price">Rs.700 <small>Rs.1000 <span> (30% off)</span></small></h4>
+                <div class="swiper-slide product-offers-card">
+                    <div class="product-offers-image tf-women">
+
+                        <img src="images/gown.png" class="product-thumb" alt="">
+                        <div class="product-info tf-info">
+                            <h2 class="product-brand">Women Denim Jacket</h2>
+                            <p class="product-short-des">Brand Name 4.4<i class="fas fa-star"></i></p>
+                            <span class="price">Rs.700 </span><span class="actual-price">Rs.1000</span> (30% off)
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide product-offers-card">
+                    <div class="product-offers-image tf-women">
+
+                        <img src="images/deals2.png" class="product-thumb" alt="">
+                        <div class="product-info tf-info">
+                            <h2 class="product-brand">Women Denim Jacket</h2>
+                            <p class="product-short-des">Brand Name 4.4<i class="fas fa-star"></i></p>
+                            <span class="price">Rs.700 </span><span class="actual-price">Rs.1000</span> (30% off)
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide product-offers-card">
+                    <div class="product-offers-image tf-women">
+
+                        <img src="images/jacket.png" class="product-thumb" alt="">
+                        <div class="product-info tf-info">
+                            <h2 class="product-brand">Women Denim Jacket</h2>
+                            <p class="product-short-des">Brand Name 4.4<i class="fas fa-star"></i></p>
+                            <span class="price">Rs.700 </span><span class="actual-price">Rs.1000</span> (30% off)
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -191,29 +266,81 @@
         <h1 class="heading"> Deals of the Day</h1>
         <div class="swiper product-slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide box">
-                    <img class="image" src="images/deals1.png" alt="">
-                    <h1><img width="50px" src="images/brand.png" alt=""></h1>
-                    <h2>Best of styles</h2>
-                    <p class="price">Under Rs.799</p>
+                <div class="swiper-slide product-offers-card">
+                    <div class="product-offers-image df-men">
+                        <img src="images/deals1.png" class="product-thumb" alt="">
+                        <div class="product-info">
+                            <h1><img width="50px" src="images/brand.png" alt=""></h1>
+                            <h2>Best of styles</h2>
+                            <p class="price">Under Rs.799</p>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="swiper-slide box">
-                    <img class="image" src="images/deals2.png" alt="">
-                    <h1><img width="50px" src="images/brand.png" alt=""></h1>
-                    <h2>Best of styles</h2>
-                    <p class="price">Under Rs.799</p>
+                <div class="swiper-slide product-offers-card">
+                    <div class="product-offers-image df-men">
+                        <img src="images/deals2.png" class="product-thumb" alt="">
+                        <div class="product-info">
+                            <h1><img width="50px" src="images/brand.png" alt=""></h1>
+                            <h2>Best of styles</h2>
+                            <p class="price">Under Rs.799</p>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="swiper-slide box">
-                    <img class="image" src="images/deals3.png" alt="">
-                    <h1><img width="50px" src="images/brand.png" alt=""></h1>
-                    <h2>Best of styles</h2>
-                    <p class="price">Under Rs.799</p>
+                <div class="swiper-slide product-offers-card">
+                    <div class="product-offers-image df-men">
+                        <img src="images/deals3.png" class="product-thumb" alt="">
+                        <div class="product-info">
+                            <h1><img width="50px" src="images/brand.png" alt=""></h1>
+                            <h2>Best of styles</h2>
+                            <p class="price">Under Rs.799</p>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="swiper-slide box">
-                    <img class="image" src="images/deals1.png" alt="">
-                    <h1><img width="50px" src="images/brand.png" alt=""></h1>
-                    <h2>Best of styles</h2>
-                    <p class="price">Under Rs.799</p>
+                <div class="swiper-slide product-offers-card">
+                    <div class="product-offers-image df-men">
+                        <img src="images/deals1.png" class="product-thumb" alt="">
+                        <div class="product-info">
+                            <h1><img width="50px" src="images/brand.png" alt=""></h1>
+                            <h2>Best of styles</h2>
+                            <p class="price">Under Rs.799</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide product-offers-card">
+                    <div class="product-offers-image df-men">
+                        <img src="images/deals2.png" class="product-thumb" alt="">
+                        <div class="product-info">
+                            <h1><img width="50px" src="images/brand.png" alt=""></h1>
+                            <h2>Best of styles</h2>
+                            <p class="price">Under Rs.799</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide product-offers-card">
+                    <div class="product-offers-image df-men">
+                        <img src="images/deals3.png" class="product-thumb" alt="">
+                        <div class="product-info">
+                            <h1><img width="50px" src="images/brand.png" alt=""></h1>
+                            <h2>Best of styles</h2>
+                            <p class="price">Under Rs.799</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide product-offers-card">
+                    <div class="product-offers-image df-men">
+                        <img src="images/deals1.png" class="product-thumb" alt="">
+                        <div class="product-info">
+                            <h1><img width="50px" src="images/brand.png" alt=""></h1>
+                            <h2>Best of styles</h2>
+                            <p class="price">Under Rs.799</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -222,35 +349,96 @@
 
     <!-- Offers section starts -->
 
-    <section class="offers">
-        <h1 class="heading">Trending Offers</h1>
-        <div class="swiper offers-slider">
-            <div class="swiper-wrapper ">
-                <div class="swiper-slide box">
-                    <img class="offer-image" src="images/offer1.png" alt="">
-                </div>
+    <section class="product-offers">
+        <h2 class="product-offers-category">Trending Offers</h2>
+        <button class="pre-btn"><img width="40px" src="images/right-arrow.png" alt=""></button>
+        <button class="nxt-btn"><img width="40px" src="images/right-arrow.png" alt=""></button>
+        <div class="product-offers-container">
+            <div class="product-offers-card">
+                <div class="product-offers-image">
 
-                <div class="swiper-slide box">
-                    <img src="images/brand.png" alt="">
-                    <h2>Min 60% off</h2>
-                    <a href="#" class="btn">Explore</a>
-                </div>
-                <div class="swiper-slide box">
-                    <img class="offer-image" src="images/offer2.png" alt="">
-                </div>
-                <div class="swiper-slide box">
-                    <h1>FOREVER 21</h1>
-                    <h2>Min 50% off</h2>
-                    <a href="#" class="btn">Explore</a>
-                </div>
-                <div class="swiper-slide box">
-                    <img class="offer-image" src="images/offer1.png" alt="">
+                    <img src="images/offer1.png" class="product-thumb" alt="">
+
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="product-offers-card">
+                <div class="product-offers-image">
+
+                    <div class="offers-tag">
+                        <h1><img width="70px" height="45px" src="images/brand.png" alt=""></h1>
+                        <p>Min 50% off</p>
+                        <a href="#" class="btn offers-btn">Explore</a>
+                    </div>
+                    <img src="images/offer3.png" class="product-thumb" alt="">
+
+                </div>
+            </div>
+            <div class="product-offers-card">
+                <div class="product-offers-image">
+
+                    <img src="images/offer2.png" class="product-thumb" alt="">
+
+                </div>
+            </div>
+            <div class="product-offers-card">
+                <div class="product-offers-image">
+
+                    <div class="offers-tag">
+                        <h2>FOREVER 21</h2>
+                        <p>Min 50% off</p>
+                        <a href="#" class="btn offers-btn">Explore</a>
+                    </div>
+                    <img src="images/offer3.png" class="product-thumb" alt="">
+
+                </div>
+            </div>
+            <div class="product-offers-card">
+                <div class="product-offers-image">
+
+                    <img src="images/offer1.png" class="product-thumb" alt="">
+
+                </div>
+            </div>
+            <div class="product-offers-card">
+                <div class="product-offers-image">
+                    <div class="offers-tag">
+                        <h1><img width="70px" height="45px" src="images/brand.png" alt=""></h1>
+                        <p>Min 50% off</p>
+                        <a href="#" class="btn offers-btn">Explore</a>
+                    </div>
+                    <img src="images/offer3.png" class="product-thumb" altt="">
+
+                </div>
+            </div>
+            <div class="product-offers-card">
+                <div class="product-offers-image">
+
+                    <img src="images/offer2.png" class="product-thumb" altt="">
+
+                </div>
+            </div>
+            <div class="product-offers-card">
+                <div class="product-offers-image">
+                    <div class="offers-tag">
+                        <h2>FOREVER 21</h2>
+                        <p>Min 50% off</p>
+                        <a href="#" class="btn offers-btn">Explore</a>
+                    </div>
+                    <img src="images/offer3.png" class="product-thumb" altt="">
+
+                </div>
+            </div>
+            <div class="product-offers-card">
+                <div class="product-offers-image">
+
+                    <img src="images/offer1.png" class="product-thumb" altt="">
+
+                </div>
+            </div>
         </div>
     </section>
+
+
     <!-- Offers section ends -->
 
     <!-- festival section starts -->
@@ -258,9 +446,9 @@
     <section class="festival">
         <div class="offer">
             <h1>FOREVER 21</h1>
-            <p>Big Fashion Festival <br>
-                70% - 80% off</p>
-            <a href="#" class="btn offer-btn">Explore</a>
+            <p>Big Fashion Festival </p>
+            <span>70% - 80% off</span>
+            <div><button href="#" class="btn offer-btn">Explore</button></div>
         </div>
     </section>
 
@@ -269,7 +457,7 @@
     <!-- Shop section starts -->
 
     <section class="categories">
-        <h1>Shop by Categories</h1>
+        <h1 class="categories-title">Shop by Categories</h1>
         <div class="categories-content">
             <div class="categories-box">
                 <img src="images/catagories1.png" alt="">
@@ -290,7 +478,6 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide box">
                     <img src="images/review.png" alt="">
-                    <h3>John deo</h3>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -301,13 +488,11 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur perferendis eum deserunt
                         maiores necessitatibus et quam? Aliquam, esse. Similique consectetur cumque velit ea accusantium
                         iure aliquam laborum vel laudantium in, pariatur molestias nisi dignissimos sunt nostrum
-                        voluptatibus cum temporibus maiores error fugiat, ratione mollitia enim. Eos expedita aliquam
-                        omnis velit.</p>
+                        voluptatibus cum temporibus maiores error fugiat, ratione mollitia enim.</p>
 
                 </div>
                 <div class="swiper-slide box">
                     <img src="images/review.png" alt="">
-                    <h3>John deo</h3>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -318,13 +503,11 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iste necessitatibus odio aliquid
                         sunt quae eos magnam, animi ratione natus, nisi aspernatur hic distinctio maiores laudantium
                         nihil soluta quo nesciunt reiciendis laboriosam voluptatibus consequuntur quam doloremque. Atque
-                        labore vero accusamus laboriosam, ipsam numquam quod totam rerum, expedita exercitationem sit
-                        error.</p>
+                        labore vero accusamus laboriosam.</p>
 
                 </div>
                 <div class="swiper-slide box">
                     <img src="images/review.png" alt="">
-                    <h3>John deo</h3>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -335,13 +518,11 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo dicta perspiciatis itaque
                         rem, molestias molestiae eveniet ullam doloremque dolore quaerat ad ea animi natus perferendis
                         iusto minus beatae provident quam architecto illum! Quod sint fuga nulla repellat, quibusdam
-                        reiciendis corporis adipisci. Ad consequatur cumque exercitationem praesentium iste, velit at
-                        asperiores!</p>
+                        reiciendis corporis adipisci. Ad consequatur cumque exercitationem!</p>
 
                 </div>
                 <div class="swiper-slide box">
                     <img src="images/review.png" alt="">
-                    <h3>John deo</h3>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -352,12 +533,11 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo dicta perspiciatis itaque
                         rem, molestias molestiae eveniet ullam doloremque dolore quaerat ad ea animi natus perferendis
                         iusto minus beatae provident quam architecto illum! Quod sint fuga nulla repellat, quibusdam
-                        reiciendis corporis adipisci. Ad consequatur cumque exercitationem praesentium iste, velit at
-                        asperiores!</p>
+                        reiciendis corporis adipisci. Ad consequatur cumque exercitationem!</p>
 
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-next "></div>
             <div class="swiper-button-prev"></div>
         </div>
     </section>
@@ -368,45 +548,74 @@
     <section class="footer">
         <div class="box-container">
             <div class="box">
-                <h3>Globex <i class="fas fa-shopping-basket"></i></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ipsam quidem similique
-                    perferendis quis vel aliquam blanditiis facere, architecto consectetur.</p>
-                <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-instagram"></a>
-                    <a href="#" class="fab fa-linkedin"></a>
+                <h2><img src="images/logo.png" alt=""> Globex </h2>
+                <div class="footer-body">
+                    <div class="box">
+                        <h3>Women</h3>
+                        <a href="#" class="links"> All Women </a>
+                        <a href="#" class="links"> Shirts </a>
+                        <a href="#" class="links"> T-shirts </a>
+                        <a href="#" class="links"> Shorts</a>
+                        <a href="#" class="links"> Jackets</a>
+                    </div>
+
+                    <div class="box">
+                        <h3>Men</h3>
+                        <a href="#" class="links"> All Men </a>
+                        <a href="#" class="links"> Shirts </a>
+                        <a href="#" class="links"> T-shirts </a>
+                        <a href="#" class="links"> Shorts</a>
+                        <a href="#" class="links"> Jackets</a>
+                    </div>
+
+                    <div class="box">
+                        <h3>Kids</h3>
+                        <a href="#" class="links"> All kids </a>
+                        <a href="#" class="links"> Shirts </a>
+                        <a href="#" class="links"> T-shirts </a>
+                        <a href="#" class="links"> Shorts
+                        </a>
+                        <a href="#" class="links"> Jackets
+                        </a>
+                    </div>
+
+                    <div class="box">
+                        <h3>Shopping</h3>
+                        <a href="#" class="links"> Your cart </a>
+                        <a href="#" class="links"> your orders </a>
+                        <a href="#" class="links"> Compared items </a>
+                        <a href="#" class="links"> Wishlist
+                        </a>
+                        <a href="#" class="links"> Shipping Details
+                        </a>
+                    </div>
+
+                    <div class="box">
+                        <h3>More links</h3>
+                        <a href="#" class="links"> Blogs </a>
+                        <a href="#" class="links"> Gift center </a>
+                        <a href="#" class="links"> Buying guiders </a>
+                        <a href="#" class="links"> New arrivals </a>
+                        <a href="#" class="links"> Clearance </a>
+                    </div>
+                    <div class="box">
+                        <h3>Stay In Touch</h3>
+                        <p>Stay in touch to get special offers, free giveaways and once in a lifetime deals</p>
+                        <button class="email"><i class="fa-regular fa-envelope"></i>Enter your email</button>
+
+                    </div>
                 </div>
-            </div>
-
-            <div class="box">
-                <h3>contact info</h3>
-                <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-                <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
-                <a href="#" class="links"> <i class="fas fa-envelope"></i> nurinosia@gmail.com </a>
-                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Bogura, Bangladesh - 400104 </a>
-            </div>
-
-            <div class="box">
-                <h3>quick links</h3>
-                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
-                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Men </a>
-                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Women </a>
-                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> kids </a>
-                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> shop </a>
-                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Contact Us </a>
-
-            </div>
-            <div class="box">
-                <h3>newsletter</h3>
-                <p>subscribe for latest updates</p>
-                <input type="email" placeholder="your email" class="email">
-                <input type="submit" value="subscribe" class="btn">
-
             </div>
         </div>
 
-        <div class="credit">creqated by <span>Nosia Akter</span> | all rights reserved</div>
+        <hr>
+        <div class="credit"><span>Terms&Conditions</span> <span> Privacy Policy </span>
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+
+        </div>
     </section>
     <!-- footer section ends -->
 
