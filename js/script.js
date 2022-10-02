@@ -128,28 +128,15 @@ var swiper = new Swiper(".banner-Swiper", {
 
 
 
-const productOffersContainers = [...document.querySelectorAll('.product-offers-container')];
-const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-const preBtn = [...document.querySelectorAll('.pre-btn')];
-
-productOffersContainers.forEach((item, i) => {
-  let containerDimenstions = item.getBoundingClientRect();
-  let containerWidth = containerDimenstions.width;
-
-  nxtBtn[i].addEventListener('click', () => {
-    item.scrollLeft += containerWidth;
-  })
-
-  preBtn[i].addEventListener('click', () => {
-    item.scrollLeft -= containerWidth;
-  })
-})
-
-
-const Shuffle = window.Shuffle;
-
-const myShuffle = new Shuffle(document.querySelector('.my-shuffle'), {
-  itemSelector: '.js-item',
-  sizer: '.js-sizer',
-  buffer: 1,
+var swiper = new Swiper(".offer-swiper", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  slidesPerGroup: 3,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
